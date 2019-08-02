@@ -1,6 +1,20 @@
 version: 2
 jobs:
-  dependencies:
+  # dependencies:
+  #   docker:
+  #     - image: circleci/node:latest
+  #   steps:
+  #     - run:
+  #         command: 'sudo npm install -g karma'
+  #     - run:
+  #         command: 'sudo npm install jasmine-core'
+  #     - run:
+  #         command: 'sudo npm install karma-jasmine karma-junit-reporter karma-spec-reporter angular-mocks'
+  #     - run:
+  #         command: 'sudo npm install -g karma-cli'
+    # cache_directories:
+    #   - ~/nvm
+  test:
     docker:
       - image: circleci/node:latest
     steps:
@@ -12,22 +26,17 @@ jobs:
           command: 'sudo npm install karma-jasmine karma-junit-reporter karma-spec-reporter angular-mocks'
       - run:
           command: 'sudo npm install -g karma-cli'
-    # cache_directories:
-    #   - ~/nvm
-  test:
-    docker:
-      - image: circleci/node:latest
-    steps:
       - run:
-          # command: 'karma start'
+          command: 'karma start'
           # command: './node_modules/karma/bin/karma start'
           # command: '/usr/local/lib/node_modules/karma-cli/bin/karma start'
-          command: '/usr/local/bin/karma start'
+          # command: '/usr/local/bin/karma start'
 workflows:
   version: 2
   build_and_test:
     jobs:
-      - dependencies
-      - test:
-          requires:
-            - dependencies
+      # - dependencies
+      - test
+      # - test:
+          # requires:
+          #   - dependencies
