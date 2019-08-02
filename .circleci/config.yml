@@ -21,7 +21,7 @@ jobs:
       - run:
           # command: 'karma start'
           # command: './node_modules/karma/bin/karma start'
-          command: '/usr/local/lib/node_modules/karma/bin/karma start'
+          command: '/usr/local/lib/node_modules/karma-cli/bin/karma start'
 workflows:
   version: 2
   build_and_test:
