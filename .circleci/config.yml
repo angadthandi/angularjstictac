@@ -1,15 +1,18 @@
 version: 2
 jobs:
+  build:
+    docker:
+      - image: buildpack-deps:trusty
   dependencies:
     steps:
       - run:
-        command: 'npm install -g karma'
+          command: 'npm install -g karma'
     # cache_directories:
     #   - ~/nvm
   test:
     steps:
       - run:
-        command: 'karma start'
+          command: 'karma start'
 workflows:
   version: 2
   build_and_test:
