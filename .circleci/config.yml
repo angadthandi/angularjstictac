@@ -15,6 +15,7 @@ jobs:
     # cache_directories:
     #   - ~/nvm
   test:
+    working_directory: ~/angularjstictac
     docker:
       - image: circleci/node:latest
     steps:
