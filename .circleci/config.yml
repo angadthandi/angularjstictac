@@ -2,7 +2,7 @@ version: 2
 jobs:
   dependencies:
     docker:
-      - image: buildpack-deps:trusty
+      - image: circleci/node:latest
     steps:
       - run:
           command: 'npm install -g karma'
@@ -16,7 +16,7 @@ jobs:
     #   - ~/nvm
   test:
     docker:
-      - image: buildpack-deps:trusty
+      - image: circleci/node:latest
     steps:
       - run:
           command: 'karma start'
