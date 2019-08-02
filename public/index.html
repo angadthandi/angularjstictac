@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script src="js/libs/angular.min.js"></script>
+    <script src="js/app.module.js"></script>
+    <script src="js/filters/app.filters.js"></script>
+    <script src="js/services/game.service.js"></script>
+    <script src="js/services/player.service.js"></script>
+    <script src="js/components/player/player.component.js"></script>
+    <script src="js/components/board/board.component.js"></script>
+    <script src="js/components/game/game.component.js"></script>
+</head>
+
+<body id="home" data-ng-app="TicTacApp">
+
+    <h1>Tic-Tac-Toe</h1>
+
+    <div>
+        <player-component />
+    </div>
+
+    <game-component />
+
+
+</body>
+</html>
