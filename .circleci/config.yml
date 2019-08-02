@@ -20,8 +20,8 @@ jobs:
       - image: circleci/node:latest
     steps:
       - checkout
-      - persist_to_workspace:
-          root: ~/angularjstictac
+      # - persist_to_workspace:
+      #     root: ~/angularjstictac
       - run:
           command: 'sudo npm install -g karma'
       - run:
