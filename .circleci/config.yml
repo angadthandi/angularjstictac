@@ -19,7 +19,8 @@ jobs:
       - image: circleci/node:latest
     steps:
       - run:
-          command: 'karma start'
+          # command: 'karma start'
+          command: './node_modules/karma/bin/karma start'
 workflows:
   version: 2
   build_and_test:
