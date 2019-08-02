@@ -6,6 +6,12 @@ jobs:
     steps:
       - run:
           command: 'npm install -g karma'
+      - run:
+          command: 'npm install jasmine-core'
+      - run:
+          command: 'npm install karma-jasmine karma-junit-reporter karma-spec-reporter angular-mocks'
+      - run:
+          command: 'npm install -g karma-cli'
     # cache_directories:
     #   - ~/nvm
   test:
