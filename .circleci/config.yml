@@ -1,8 +1,10 @@
-dependencies:
-  pre:
-   - npm install -g karma
-  cache_directories:
-    - ~/nvm
-test:
-  override:
-    - karma start
+version: 2
+jobs:
+  dependencies:
+    pre:
+    - npm install -g karma
+    cache_directories:
+      - ~/nvm
+  test:
+    override:
+      - karma start
