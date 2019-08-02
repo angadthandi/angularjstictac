@@ -1,13 +1,15 @@
 version: 2
 jobs:
   dependencies:
-    pre:
-    - npm install -g karma
-    cache_directories:
-      - ~/nvm
+    steps:
+      - run:
+        command: 'npm install -g karma'
+    # cache_directories:
+    #   - ~/nvm
   test:
-    override:
-      - karma start
+    steps:
+      - run:
+        command: 'karma start'
 workflows:
   version: 2
   build_and_test:
