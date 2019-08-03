@@ -4,7 +4,7 @@
 // process.env.CHROME_BIN = require('puppeteer').executablePath();
 // const process = require('process');
 // process.env.CHROME_BIN = require('puppeteer').executablePath();
-process.env.CHROME_BIN='/usr/bin/google-chrome';
+// process.env.CHROME_BIN='/usr/bin/google-chrome';
 module.exports = function(config) {
   config.set({
 
