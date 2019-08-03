@@ -18,7 +18,7 @@ jobs:
     working_directory: ~/angularjstictac
     docker:
       - image: circleci/node:latest
-      - image: selenium/standalone-chrome:latest
+      # - image: selenium/standalone-chrome:latest
     steps:
       - checkout
       # - persist_to_workspace:
@@ -29,6 +29,8 @@ jobs:
           command: 'sudo npm install jasmine-core'
       - run:
           command: 'sudo npm install -g karma-jasmine'
+      - run:
+          command: 'sudo npm install -g chrome-headless'
       - run:
           command: 'sudo npm install karma-junit-reporter karma-spec-reporter karma-chrome-launcher angular-mocks'
       - run:
