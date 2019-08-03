@@ -32,7 +32,11 @@ jobs:
       - run:
           command: 'sudo npm install -g chrome-headless'
       - run:
-          command: 'sudo npm install karma-junit-reporter karma-spec-reporter karma-chrome-launcher angular-mocks'
+          command: 'sudo npm install -g karma-chrome-launcher'
+      - run:
+          command: 'sudo npm install -g puppeteer'
+      - run:
+          command: 'sudo npm install karma-junit-reporter karma-spec-reporter angular-mocks'
       - run:
           command: 'sudo npm install -g karma-cli'
       - run:

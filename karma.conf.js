@@ -80,7 +80,7 @@ module.exports = function(config) {
     plugins: [
       // Karma will require() these plugins
       'karma-jasmine',
-      // 'karma-chrome-launcher'
+      'karma-chrome-launcher'
     
       // // inlined plugins
       // {'framework:xyz': ['factory', factoryFn]},
