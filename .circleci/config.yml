@@ -34,7 +34,7 @@ jobs:
       - run:
           command: 'sudo npm install -g karma-chrome-launcher'
       - run:
-          command: 'sudo npm install puppeteer'
+          command: 'sudo npm install -g puppeteer --unsafe-perm=true'
       - run:
           command: 'sudo npm install karma-junit-reporter karma-spec-reporter angular-mocks'
       - run:
