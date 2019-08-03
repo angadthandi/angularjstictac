@@ -44,6 +44,8 @@ jobs:
       - run:
           command: 'ls'
       - run:
+          command: 'which google-chrome'
+      - run:
           command: 'karma start karma.conf.js'
           # command: './node_modules/karma/bin/karma start'
           # command: '/usr/local/lib/node_modules/karma-cli/bin/karma start'
