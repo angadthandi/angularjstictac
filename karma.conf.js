@@ -77,6 +77,15 @@ module.exports = function(config) {
     browsers: ['ChromeHeadless'],
     // browsers: [],
 
+    plugins: [
+      // Karma will require() these plugins
+      'karma-jasmine',
+      // 'karma-chrome-launcher'
+    
+      // // inlined plugins
+      // {'framework:xyz': ['factory', factoryFn]},
+      // require('./plugin-required-from-config')
+    ],
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
