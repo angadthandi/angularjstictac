@@ -27,7 +27,9 @@ jobs:
       - run:
           command: 'sudo npm install jasmine-core'
       - run:
-          command: 'sudo npm install karma-jasmine karma-junit-reporter karma-spec-reporter angular-mocks'
+          command: 'sudo npm install karma-jasmine'
+      - run:
+          command: 'sudo npm install karma-junit-reporter karma-spec-reporter angular-mocks'
       - run:
           command: 'sudo npm install -g karma-cli'
       - run:
