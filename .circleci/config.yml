@@ -40,6 +40,10 @@ jobs:
       - run:
           command: 'sudo npm install -g karma-cli'
       - run:
+          command: 'pwd'
+      - run:
+          command: 'ls'
+      - run:
           command: 'karma start karma.conf.js'
           # command: './node_modules/karma/bin/karma start'
           # command: '/usr/local/lib/node_modules/karma-cli/bin/karma start'
