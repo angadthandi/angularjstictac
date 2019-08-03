@@ -44,8 +44,8 @@ jobs:
       - run:
           command: 'ls'
       - run:
-          # command: 'karma start karma.conf.js'
-          command: 'CHROME_BIN=/usr/bin/google-chrome karma start karma.conf.js'
+          command: 'karma start karma.conf.js'
+          # command: 'CHROME_BIN=/usr/bin/google-chrome karma start karma.conf.js'
           # command: './node_modules/karma/bin/karma start'
           # command: '/usr/local/lib/node_modules/karma-cli/bin/karma start'
           # command: '/usr/local/bin/karma start'
