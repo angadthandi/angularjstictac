@@ -34,7 +34,7 @@ jobs:
       - run:
           command: 'sudo npm install -g karma-chrome-launcher'
       - run:
-          command: 'sudo npm install -g puppeteer'
+          command: 'sudo npm install puppeteer'
       - run:
           command: 'sudo npm install karma-junit-reporter karma-spec-reporter angular-mocks'
       - run:
