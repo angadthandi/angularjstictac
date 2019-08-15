@@ -129,8 +129,7 @@ class GameModel
 				$next_color = 1;
 			}
 			$ret = $this->m_db->exec(
-				"UPDATE LastUpdate SET date_modified = '" . date('Y-m-d H:i:s')
-				. "' , next_color = ".$next_color
+				"UPDATE LastUpdate SET date_modified = '" . date('Y-m-d H:i:s') . "' , next_color = ".$next_color
 			);
 		}
 
